@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Acheivements = () => {
   return (
-    <div name="achievements" className="w-full h-full bg-[#F8F8F8] p-8 pt-16">
+    <div name="achievements" className="w-full h-full bg-[#F8F8F8] p-8 md:pt-16">
       <motion.h2
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -21,7 +21,7 @@ const Acheivements = () => {
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-4xl justify-center text-center text-[#13131a] font-playfair mb-10"
+        className="text-2xl md:text-4xl justify-center text-center text-[#13131a] font-playfair mb-10"
       >
         Acheivements
       </motion.h2>

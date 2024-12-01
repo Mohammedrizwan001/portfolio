@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import { fadeIn } from "./variants.js";
 
 const Home = () => {
   return (
@@ -8,10 +7,18 @@ const Home = () => {
       name="home"
       className="w-full md:h-screen h-full text-white flex flex-col items-center justify-center bg-[#0d67c5] gap-12"
     >
-      {/* container */}
-      <div className="max-w-[1000px] w-full h-full py-20 mx-auto  flex flex-col md:flex-row items-center pt-36">
-        {/* Image for the Mobile View */}
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden sm:block hidden">
+        <img
+          src="/assets/bgImage.jpeg"
+          alt="Background Element"
+          className="w-full h-full rotate-180 object-cover opacity-20 mix-blend-normal"
+        />
+      </div>
 
+      {/* container */}
+      <div className="max-w-[1000px] w-full h-full py-20 mx-auto  flex flex-col md:flex-row items-center md:pt-36">
+        {/* Image for the Mobile View */}
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -31,10 +38,23 @@ const Home = () => {
             className="object-cover w-[250px] h-auto"
             style={{ opacity: 1 }}
           />
+
+          <div className="">
+            <img
+              src="/assets/bgImage.jpeg"
+              alt=""
+              className="w-full bg-cover absolute overflow-hidden inset-0 z-0 opacity-45 mix-blend-overlay"
+              style={{
+                width: "250%",
+                height: "250%",
+                objectFit: "cover",
+              }}
+            />
+          </div>
         </motion.div>
 
-        {/* Text Section */}
-        <div className="text-center w-full md:text-left md:w-3/4 pt-10 md:pt-0">
+        {/* Text content */}
+        <div className="text-center w-full z-10 md:text-left md:w-3/4 pt-10 md:pt-0">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -46,7 +66,7 @@ const Home = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-xl font-sans"
+            className="md:text-xl text-md font-sans"
           >
             Hello there,
           </motion.div>
@@ -61,7 +81,7 @@ const Home = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-2xl md:text-4xl font-playfair"
+            className="text-xl md:text-4xl font-playfair"
             style={{ letterSpacing: "0.1rem" }}
           >
             I’m&nbsp;MOHAMMED&nbsp;RIZWAN
@@ -77,7 +97,7 @@ const Home = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-2xl md:text-4xl font-sans text-white font-semibold"
+            className="text-xl md:text-4xl font-sans text-white font-semibold"
             style={{ letterSpacing: "0.1rem" }}
           >
             Versatile&nbsp;HR&nbsp;Professional
@@ -94,7 +114,7 @@ const Home = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="flex text-justify mx-10 md:mx-0 font-sans md:justify-center items-center mt-4 max-w-prose"
+            className="flex z-10 text-sm md:text-md text-justify mx-10 md:mx-0 font-sans justify-center items-center mt-4 max-w-prose"
           >
             LinkedIn verified TOP VOICE HR PROFESSIONAL with years of
             comprehensive experience. I specialize in a broad range of HR
@@ -117,13 +137,13 @@ const Home = () => {
               opacity: { duration: 0.1 },
               ease: "easeIn",
             }}
-            className="rounded-md border-2 hover:bg-orange-500 hover:border-orange-500 text-white justify-center items-center p-4 mt-6 hover:scale-105 duration-300"
+            className="text-sm md:text-md p-3 rounded-md border-2 hover:bg-orange-500 hover:border-orange-500 text-white justify-center items-center mt-6 hover:scale-105 duration-300"
           >
             <a href="https://topmate.io/hrrizwan001/">Schedule Consultation</a>
           </motion.button>
         </div>
 
-        {/* Image for the desktop view */}
+        {/* Image for desktop view */}
 
         <motion.div
           initial={{ x: 100, opacity: 0 }}
@@ -139,12 +159,12 @@ const Home = () => {
           className="overflow-hidden absolute flex justify-center items-center bottom-0 top-0 h-auto md:right-0 pt-36"
         >
           <img
-            src="/assets/rizz-removebg.png"
+            src="/assets/rizwan-bgcopy.png"
             alt="Riswan's Image desktop view"
             className="object-cover w-full h-full md:block hidden"
             style={{
               opacity: 1,
-              transform: "scale(1.7)",
+              transform: "scale(1.3)",
               top: "50%",
               left: "50%",
               transformOrigin: "center center",

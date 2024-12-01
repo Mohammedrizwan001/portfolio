@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Service = () => {
   return (
-    <div name="service" className="w-full h-full bg-[#F8F8F8] text-[#13131a] p-8 pt-20">
+    <div name="service" className="w-full h-full bg-[#F8F8F8] text-[#13131a] p-8 md:pt-20">
       <motion.div 
       initial={{ y: 100, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
@@ -15,7 +15,7 @@ const Service = () => {
         ease: "easeIn",
         duration: 1,
       }} className="mb-8">
-        <h1 className="text-4xl text-center font-playfair pb-8">Services I Provide</h1>
+        <h1 className="text-2xl md:text-4xl text-center font-playfair pb-8">Services I Provide</h1>
       </motion.div>
 
       <motion.div 
@@ -83,7 +83,7 @@ const Service = () => {
           >
             {/* Top Section with Down Arrow */}
             <div
-              className="relative text-white font-semibold text-lg py-4"
+              className="relative text-white font-semibold text-md md:text-lg py-4"
               style={{
                 backgroundColor: service.bgColor,
                 borderRadius: "0.5rem 0.5rem 0 0",
@@ -92,20 +92,20 @@ const Service = () => {
               {service.title}
               {/* Down Arrow */}
               <div
-                className="absolute left-0 w-full h-0"
+                className="absolute justify-center left-0 w-full h-0"
                 style={{
                   top: "calc(100% - 1px)",
                   borderLeft: "100px solid transparent",
                   borderRight: "100px solid transparent",
                   borderTop: `30px solid ${service.bgColor}`,
-                  zIndex: -1, // Keep the arrow above the content
+                  zIndex: -1, 
                 }}
               ></div>
             </div>
 
             {/* Description */}
             <div className="overflow-hidden">
-              <p className="text-gray-700 px-4 py-10">{service.description}</p>
+              <p className="text-gray-700 text-sm md:text-md px-4 py-10">{service.description}</p>
             </div>
           </div>
         ))}

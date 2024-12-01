@@ -64,7 +64,7 @@ const Testimonial = () => {
           ease: "easeIn",
           duration: 1,
         }}
-        className="text-4xl font-playfair text-center justify-center mt-6"
+        className="text-2xl md:text-4xl font-playfair text-center justify-center mt-4 md:mt-6"
       >
         <p>Testimonials</p>
       </motion.div>
@@ -81,7 +81,7 @@ const Testimonial = () => {
           ease: "easeIn",
           duration: 1,
         }}
-        className="w-full bg-[#F8F8F8] text-[#13131a] text-sm py-12 px-8 mt-6"
+        className="w-full bg-[#F8F8F8] text-[#13131a] text-sm justify-center py-12 md:px-8 md:mt-6"
       >
         <div className="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
           {testimonials.map((testimonial, index) => (

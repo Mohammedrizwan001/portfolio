@@ -1,6 +1,6 @@
-import About from "./components/About";
 import Acheivements from "./components/Acheivements";
 import Contact from "./components/Contact";
+import Expertise from "./components/Expertise";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Service from "./components/Service";
@@ -13,7 +13,7 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      <About />
+      <Expertise />
       <Testimonial />
       <Skills />
       <Service />
