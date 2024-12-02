@@ -8,7 +8,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="fixed w-full h-[80px] flex items-center justify-between px-4 gap-2 bg-transparent md:backdrop-blur-lg z-50 md:shadow-black/40 md:shadow-sm md:text-white md:mix-blend-difference">
+    <div className="fixed w-full h-[80px] flex items-center justify-between px-4 gap-2 bg-transparent md:backdrop-blur-lg z-50 md:shadow-black/40 md:shadow-sm md:text-black">
       {/* desktop view */}
       <ul
         className="hidden lg:flex ml-auto space-x-6"
