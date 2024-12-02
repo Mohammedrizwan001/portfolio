@@ -41,7 +41,7 @@ const Contact = () => {
         <p className="text-sm md:text-xl font-semibold text-center md:text-left  mb-4 pt-6">
           Request for consultation
         </p>
-        <button className="rounded-md h-10 bg-orange-600 flex items-center justify-center text-sm text-white hover:scale-105 duration-300 shadow-sm shadow-black/40 px-6 py-2">
+        <button className="rounded-md h-10 bg-blue-600 flex items-center justify-center text-sm text-white hover:scale-105 duration-300 shadow-sm shadow-black/40 px-6 py-2">
           <a href="mailto:mohammedrizz2803@gmail.com">Contact Me</a>
         </button>
       </motion.div>
