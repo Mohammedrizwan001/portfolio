@@ -17,7 +17,7 @@ const Home = () => {
       </div>
 
       {/* container */}
-      <div className="max-w-[1000px] w-full h-full py-20 mx-auto  flex flex-col md:flex-row items-center md:pt-36">
+      <div className="max-w-[1000px] w-full h-full py-20 mx-auto flex flex-col md:flex-row items-center md:pt-36">
         {/* Image for the Mobile View */}
         <motion.div
           initial={{ x: 100, opacity: 0 }}
@@ -42,12 +42,13 @@ const Home = () => {
           <div className="">
             <img
               src="/assets/bgImage.jpeg"
-              alt=""
-              className="w-full bg-cover absolute overflow-hidden inset-0 z-0 opacity-45 mix-blend-overlay"
+              alt="Background image for the mobile view"
+              className="w-full bg-cover absolute overflow-hidden inset-0 z-0 opacity-20 mix-blend-normal"
               style={{
                 width: "250%",
                 height: "250%",
                 objectFit: "cover",
+                transform: "translateY(-40%)"
               }}
             />
           </div>
@@ -144,7 +145,6 @@ const Home = () => {
         </div>
 
         {/* Image for desktop view */}
-
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -164,7 +164,8 @@ const Home = () => {
             className="object-cover w-full h-full md:block hidden"
             style={{
               opacity: 1,
-              transform: "scale(1.3)",
+              objectFit: "cover", // Ensures the image is sized correctly
+              transform: "scale(1)", // Ensures no zooming effect
               top: "50%",
               left: "50%",
               transformOrigin: "center center",

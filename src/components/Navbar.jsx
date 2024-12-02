@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className="fixed w-full h-[80px] flex items-center justify-between px-4 gap-2 bg-transparent md:backdrop-blur-lg z-50 md:shadow-black/40 md:shadow-sm md:text-white md:mix-blend-difference">
       {/* desktop view */}
       <ul
-        className="hidden md:flex ml-auto space-x-6"
+        className="hidden lg:flex ml-auto space-x-6"
       >
         <li className="hover:scale-105 duration-300 cursor-pointer">
           <Link to="home" smooth={true} duration={300} offset={-40}>
@@ -54,13 +54,13 @@ const Navbar = () => {
 
       <div
         onClick={handleClick}
-        className="md:hidden mr-2 z-10 ml-auto cursor-pointer"
+        className="lg:hidden mr-2 z-10 ml-auto cursor-pointer"
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
       <ul
-        className={`absolute top-20 left-1/2 -translate-x-1/2 rounded-lg w-[80%] h-[430px] backdrop-blur-lg bg-opacity-90 px-8 py-4 bg-white text-black shadow-md shadow-black/40 flex flex-col items-center transition-all duration-300 ease-in-out ${
+        className={`absolute top-20 left-1/2 -translate-x-1/2 rounded-lg w-[80%] h-[430px] bg-opacity-90 px-8 py-4 bg-white text-black shadow-md shadow-black/40 flex flex-col items-center transition-all duration-300 ease-in-out ${
           nav ? "block" : "hidden"
         }`}
       >
@@ -97,7 +97,7 @@ const Navbar = () => {
         <li className="py-3 text-2xl hover:text-[#0d67c5] hover:opacity-80 transition-opacity duration-200">
           <Link
             onClick={handleClick}
-            to="acheivements"
+            to="achievements"
             smooth={true}
             duration={300}
           >

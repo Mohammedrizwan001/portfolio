@@ -50,7 +50,7 @@ const Skills = () => {
             ease: "easeIn",
             duration: 1,
           }}
-          className="md:w-[1200px] w-[290px] h-full md:p-2 mt-4 bg-[#0d67c5] rounded-xl shadow-lg shadow-white"
+          className="md:w-[1200px] w-full max-w-full h-full md:p-2 mt-4 bg-[#0d67c5] rounded-xl shadow-lg shadow-white overflow-hidden"
         >
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-center text-[#13131a] font-semibold py-8">
             <div
